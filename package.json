@@ -1,0 +1,30 @@
+{
+  "name": "dagger-for-azuredevops",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "shx rm -rf dist",
+    "build": "shx mkdir -p dist && npm run copy:assets",
+    "copy:assets": "shx cp task.json dist/ && shx cp package.json dist/",
+    "package": "tfx extension create --manifest-globs vss-extension.json"
+  },
+  "keywords": [],
+  "author": "Tieu-Philippe KHIM <khim.tieu.philippe@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "azure-pipelines-task-lib": "^3.2.0",
+    "azure-pipelines-tool-lib": "^1.3.0"
+  },
+  "devDependencies": {
+    "@types/mocha": "^9.1.0",
+    "@types/node": "^10.17.60",
+    "@types/q": "^1.5.5",
+    "shx": "^0.3.4",
+    "sync-request": "^6.1.0",
+    "tfx-cli": "^0.11.0",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  }
+}
