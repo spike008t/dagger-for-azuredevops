@@ -10,7 +10,7 @@
     "version": {
         "Major": 0,
         "Minor": 1,
-        "Patch": 4
+        "Patch": 5
     },
     "instanceNameFormat": "Dagger $(args)",
     "inputs": [
@@ -18,13 +18,15 @@
             "name": "version",
             "type": "string",
             "label": "Dagger version",
-            "defaultValue": "latest"
+            "defaultValue": "latest",
+            "helpMarkDown": "The dagger version to use, see [release version on github](https://github.com/dagger/dagger/releases)"
         },
         {
             "name": "installOnly",
             "type": "boolean",
             "label": "Only install Dagger",
-            "defaultValue": false
+            "defaultValue": false,
+            "helpMarkDown": "Only install dagger without running any argument"
         },
         {
             "name": "args",
@@ -32,7 +34,7 @@
             "label": "Dagger arguments",
             "defaultValue": "do build",
             "required": true,
-            "helpMarkDown": "Dagger args"
+            "helpMarkDown": "The argument to pass to dagger"
         },
         {
             "name": "workingDirectory",
@@ -40,7 +42,7 @@
             "label": "Working directory",
             "defaultValue": "$(System.DefaultWorkingDirectory)",
             "required": true,
-            "helpMarkDown": "The Working directory directory to deploy"
+            "helpMarkDown": "The Working directory directory to run dagger command"
         }
     ],
     "execution": {
