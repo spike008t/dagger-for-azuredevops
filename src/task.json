@@ -10,9 +10,9 @@
     "version": {
         "Major": 0,
         "Minor": 1,
-        "Patch": 0
+        "Patch": 4
     },
-    "instanceNameFormat": "Echo $(samplestring)",
+    "instanceNameFormat": "Dagger $(args)",
     "inputs": [
         {
             "name": "version",
@@ -33,11 +33,19 @@
             "defaultValue": "do build",
             "required": true,
             "helpMarkDown": "Dagger args"
+        },
+        {
+            "name": "workingDirectory",
+            "type": "filePath",
+            "label": "Working directory",
+            "defaultValue": "$(System.DefaultWorkingDirectory)",
+            "required": true,
+            "helpMarkDown": "The Working directory directory to deploy"
         }
     ],
     "execution": {
         "Node10": {
-            "target": "dist/index.js"
+            "target": "index.js"
         }
     }
 }

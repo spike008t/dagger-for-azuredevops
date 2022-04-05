@@ -2,21 +2,28 @@
     "manifestVersion": 1,
     "id": "ktp-dagger-for-azuredevops",
     "name": "Dagger for azuredevops",
-    "version": "0.0.1",
+    "version": "0.0.4",
     "publisher": "TieuPhilippeKhim",
     "targets": [
         {
             "id": "Microsoft.VisualStudio.Services"
         }
-    ],    
-    "description": "Tools for building/releasing with Fabrikam. Includes one build/release task.",
+    ],
+    "tags": [
+        "dagger"
+    ],
+    "description": "Tools for building/releasing with Dagger.",
     "categories": [
         "Azure Pipelines"
     ],
     "icons": {
-        "default": "images/extension-icon.png"        
+        "default": "images/extension-icon.png"
     },
     "files": [
+        {
+            "path": "images",
+            "addressable": true
+        },
         {
             "path": "dist"
         }
@@ -29,7 +36,7 @@
                 "ms.vss-distributed-task.tasks"
             ],
             "properties": {
-                "name": "Dagger for azuredevops"
+                "name": "dist"
             }
         }
     ]
