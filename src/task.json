@@ -12,6 +12,9 @@
         "Minor": 1,
         "Patch": 5
     },
+    "demands": [
+        "docker"
+    ],
     "instanceNameFormat": "Dagger $(args)",
     "inputs": [
         {
