@@ -4,6 +4,8 @@ import * as dagger from './dagger';
 import * as path from 'path';
 
 async function run() {
+  tl.setResourcePath(path.join(__dirname, 'task.json'));
+
   try {
     const version: string = tl.getInput("version") ?? "latest";
     const daggerBin = await dagger.install(version);
