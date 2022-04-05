@@ -10,7 +10,7 @@
     "build:src": "ncc build",
     "build:assets": "shx cp src/task.json dist/",
     "build:modules": "npm install --production",
-    "build:vsix": "tfx extension create --manifest-globs vss-extension.json"
+    "build:vsix": "tfx extension create --manifest-globs vss-extension.json --output-path ./out/"
   },
   "keywords": [],
   "author": "Tieu-Philippe KHIM <khim.tieu.philippe@gmail.com>",
