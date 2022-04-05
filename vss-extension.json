@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "ktp-dagger-for-azuredevops",
     "name": "Dagger for azuredevops",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "publisher": "TieuPhilippeKhim",
     "targets": [
         {
