@@ -9,7 +9,6 @@
     "build": "shx mkdir -p dist && npm run build:src && npm run build:assets && npm run build:vsix",
     "build:src": "ncc build",
     "build:assets": "shx cp src/task.json src/icon.png dist/",
-    "build:modules": "npm install --production",
     "build:vsix": "tfx extension create --manifest-globs vss-extension.json --output-path ./out/"
   },
   "keywords": [],
