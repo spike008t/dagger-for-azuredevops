@@ -3,14 +3,14 @@
     "id": "f9d2cc54-986f-4c51-b500-a9a340409d9d",
     "name": "dagger",
     "friendlyName": "dagger",
-    "description": "Dagger for azure devops",
+    "description": "Dagger for Azure Devops",
     "helpMarkDown": "",
     "category": "Utility",
     "author": "Tieu Philippe KHIM",
     "version": {
         "Major": 0,
         "Minor": 1,
-        "Patch": 6
+        "Patch": 7
     },
     "demands": [
         "docker"
